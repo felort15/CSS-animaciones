@@ -29,16 +29,17 @@
             z-index: 1;
             height: 450px;
             width: 80px;
-            background:#CCEFFF;
+            background:none;
             bottom: 0;
             right: 60px;
+            
         }
          .layer-2 {
             position: absolute;
             z-index: 2;
              height: 450px;
             width: 80px;
-            background:#CCEFFF;
+            background:none;
             bottom: 0;
             left: 60px;
         }
@@ -48,19 +49,30 @@
             left: 0;
             right: 0;
             margin: 0 auto;
-            width: 220px;
+            width: 240px;
             height: 400px;
-            background: violet;
+            background:brown;
             bottom: 0;
+            border-radius: 10%;
         }
+        .layer-3-grass{
+            position: absolute;
+            z-index: 3;
+            height: 40px;
+            width: 240px;
+            top: 0;
+            background:green;
+            border-radius: 10px;
+        }
+        
          .layer-4 {
             position: absolute;
             z-index: 5;
              height: 350px;
             width: 80px;
-            background:#CCEFFF;
+            background:none;
             bottom: 0;
-            left: 20px;
+            left: 30px;
         }
          .layer-5 {
             position: absolute;
@@ -69,7 +81,8 @@
             margin: 0 auto;
             width: 200px;
             height: 300px;
-            background:red;
+            background:brown;
+            border-radius: 10%;
             bottom: 0;
         }
          .layer-6 {
@@ -77,7 +90,7 @@
             z-index: 7;
             height: 250px;
             width: 80px;
-            background:#CCEFFF;
+            background:none;
             bottom: 0;
             right: 30px;
         }
@@ -88,36 +101,129 @@
             margin: 0 auto;
             width: 200px;
             height: 200px;
-            background: blanchedalmond;
+            background: brown;
+            border-radius: 10%;
             bottom: 0;
         }
          .layer-8 {
             position: absolute;
             z-index: 8;
-            height: 150px;
-            width: 150px;
-            background:black;
+            height: 130px;
+            width: 120px;
+            background:none;
             bottom: 0;
-            left: 80px;
+            left: 60px;
         }
          .layer-9 {
             position: absolute;
             z-index: 9;
-            right: 0;
-            background: blue;
-            width: 100px;
-            height: 150px;
+            right: 30px;
+            background: none;
+            width: 120px;
+            height: 120px;
             bottom: 0;
         }
          .layer-10 {
             position: absolute;
             z-index: 10;
-            left: 0;
-            background:white;
-            width: 150px;
-            height: 150px;
+            right: 0;
+            background:none;
+            width: 120px;
+            height: 120px;
             bottom: 0;
+            left: 0;
+         }
+           .layer-8-bush-1{
+            z-index: 8;
+            position: absolute;
+            width: 100px;
+            height: 90px;
+            background: greenyellow;
+            left: 0;
+            bottom: 0;
+            border-radius: 50%;
         }
+        .layer-8-bush-2{
+            z-index: 8;
+            position: absolute;
+             width: 100px;
+            height: 120px;
+            background: greenyellow;
+            left: 30px;
+            border-radius: 50%;
+        }
+        .layer-8-bush-3 {
+            z-index: 8;
+            position: absolute;
+             width: 100px;
+            height: 90px;
+            background:greenyellow;
+            left: 60px;
+            border-radius: 10%;
+            bottom: 0%;
+        }
+         .layer-9-bush-1{
+            z-index: 9;
+            position: absolute;
+            width: 100px;
+            height: 90px;
+            background: green;
+            left: 0;
+            bottom: 0;
+            border-radius: 45px;
+        }
+        .layer-9-bush-2{
+            z-index: 9;
+            position: absolute;
+             width: 100px;
+            height: 120px;
+            background: green;
+            left: 30px;
+            border-radius: 50%;
+        }
+        .layer-9-bush-3 {
+            z-index: 9;
+            position: absolute;
+             width: 90px;
+            height: 90px;
+            background: green;
+            left: 60px;
+            border-radius: 35%;
+            bottom: 0%;
+        }
+
+        .layer-10-bush-1{
+            z-index: 10;
+            position: absolute;
+            width: 100px;
+            height: 90px;
+            background: green;
+            left: 0;
+            bottom: 0;
+            border-radius: 35%;
+        }
+        .layer-10-bush-2{
+            z-index: 10;
+            position: absolute;
+             width: 70px;
+            height: 90px;
+            background: green;
+            left: 35px;
+            border-radius: 50%;
+        }
+        .layer-10-bush-3 {
+            z-index: 10;
+            position: absolute;
+             width: 80px;
+            height: 80px;
+            background: green;
+            left: 60px;
+            border-radius: 35%;
+            bottom: 0%;
+        }
+
+    
+        
         .left-ear--outer{
             background:white;
             border-radius: 90%;
@@ -162,6 +268,19 @@
             margin: 0 auto;
             top: 30px;
             width: 100%;
+
+            animation-name: blink;
+        }
+        @keyframes blink{
+            0%{
+
+            }
+            5%{
+
+            }
+            10%{
+                
+            }
         }
         .head-eye--left{
             background:gray;
@@ -206,7 +325,9 @@
                 <div class="head-eye--left"></div>
             </div>
         </div>
-        <div class="layer-3"></div>
+        <div class="layer-3">
+            <div class="layer-3-grass"></div>
+        </div>
         <div class="layer-4">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
@@ -229,9 +350,21 @@
             </div>
         </div>
         <div class="layer-7"></div>
-        <div class="layer-8"></div>
-        <div class="layer-9"></div>
-        <div class="layer-10"></div>
+        <div class="layer-8">
+            <div class="layer-8-bush-1"></div>
+            <div class="layer-8-bush-2"></div>
+            <div class="layer-8-bush-3"></div>
+        </div>
+        <div class="layer-9">
+            <div class="layer-9-bush-1"></div>
+            <div class="layer-9-bush-2"></div>
+            <div class="layer-9-bush-3"></div>
+        </div>
+        <div class="layer-10">
+            <div class="layer-10-bush-1"></div>
+            <div class="layer-10-bush-2"></div>
+            <div class="layer-10-bush-3"></div>
+        </div>
     </div>
 </body>
 </html>
