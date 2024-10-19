@@ -72,7 +72,7 @@
             width: 80px;
             background:none;
             bottom: 0;
-            left: 30px;
+            left: 50px;
         }
          .layer-5 {
             position: absolute;
@@ -85,6 +85,15 @@
             border-radius: 10%;
             bottom: 0;
         }
+        .layer-5-grass{
+            position: absolute;
+            z-index: 3;
+            height: 40px;
+            width: 200px;
+            top: 0;
+            background:green;
+            border-radius: 10px;
+        }
          .layer-6 {
             position: absolute;
             z-index: 7;
@@ -92,7 +101,7 @@
             width: 80px;
             background:none;
             bottom: 0;
-            right: 30px;
+            right: 50px;
         }
          .layer-7 {
             position: absolute;
@@ -105,6 +114,16 @@
             border-radius: 10%;
             bottom: 0;
         }
+           .layer-7-grass{
+            position: absolute;
+            z-index: 3;
+            height: 40px;
+            width: 200px;
+            top: 0;
+            background:green;
+            border-radius: 10px;
+        }
+           
          .layer-8 {
             position: absolute;
             z-index: 8;
@@ -268,20 +287,9 @@
             margin: 0 auto;
             top: 30px;
             width: 100%;
-
-            animation-name: blink;
         }
-        @keyframes blink{
-            0%{
-
-            }
-            5%{
-
-            }
-            10%{
-                
-            }
-        }
+       
+        
         .head-eye--left{
             background:gray;
             border-radius: 50%;
@@ -290,6 +298,10 @@
             position: absolute;
             top: 15px;
             left: 25px;
+    
+         animation-name: blink;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
         .head-eye--rigth{
             background: gray;
@@ -299,8 +311,24 @@
             position: absolute;
             top: 15px;
             left: 50px;
+            animation-name: blink;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
-      
+    
+         @keyframes blink{
+            0%{
+              height: 4px;          
+            }
+            5%{
+              transform: translate(0px, 2px);
+              height: 1px;
+            }
+            10%{
+              transform: translate(0px, 0px);
+              height: 4px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -338,7 +366,9 @@
                 <div class="head-eye--left"></div>
             </div>
         </div>
-        <div class="layer-5"></div>
+        <div class="layer-5">
+            <div class="layer-5-grass"></div>
+        </div>
         <div class="layer-6">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
@@ -349,7 +379,9 @@
                 <div class="head-eye--left"></div>
             </div>
         </div>
-        <div class="layer-7"></div>
+        <div class="layer-7">
+            <div class="layer-7-grass"></div>
+        </div>
         <div class="layer-8">
             <div class="layer-8-bush-1"></div>
             <div class="layer-8-bush-2"></div>
