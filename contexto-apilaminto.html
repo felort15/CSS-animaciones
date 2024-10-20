@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
         body {
             margin: 0;
             width:100% ;
@@ -32,8 +33,24 @@
             background:none;
             bottom: 0;
             right: 60px;
+
+            animation-name: layer;
+            animation-duration: 4s;
+            animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+            animation-iteration-count: infinite;
+            }
+            @keyframes layer {
+                0%{
+                    bottom :0;
+                }
+                25%{
+                    bottom: -80px;
+                }
+                100%{
+                    bottom: 0;
+                }
+            }
             
-        }
          .layer-2 {
             position: absolute;
             z-index: 2;
@@ -42,6 +59,21 @@
             background:none;
             bottom: 0;
             left: 60px;
+                animation-name: layer;
+            animation-duration: 2s;
+            animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+            animation-iteration-count: infinite;
+            }
+            @keyframes layer {
+                0%{
+                    bottom :0;
+                }
+                25%{
+                    bottom: -80px;
+                }
+                100%{
+                    bottom: 0;
+                }
         }
          .layer-3 {
             position: absolute;
@@ -54,7 +86,8 @@
             background:brown;
             bottom: 0;
             border-radius: 10%;
-        }
+        
+       }
         .layer-3-grass{
             position: absolute;
             z-index: 3;
@@ -73,10 +106,25 @@
             background:none;
             bottom: 0;
             left: 50px;
+                animation-name: layer;
+            animation-duration: 2s;
+            animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+            animation-iteration-count: infinite;
+            }
+            @keyframes layer {
+                0%{
+                    bottom :0;
+                }
+                25%{
+                    bottom: -80px;
+                }
+                100%{
+                    bottom: 0;
+                }
         }
          .layer-5 {
             position: absolute;
-            z-index: 6;
+            z-index: 5;
             left: 0;
             margin: 0 auto;
             width: 200px;
@@ -87,7 +135,7 @@
         }
         .layer-5-grass{
             position: absolute;
-            z-index: 3;
+            z-index: 5;
             height: 40px;
             width: 200px;
             top: 0;
@@ -102,6 +150,21 @@
             background:none;
             bottom: 0;
             right: 50px;
+                animation-name: layer;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+            animation-iteration-count: infinite;
+            }
+            @keyframes layer {
+                0%{
+                    bottom :0;
+                }
+                25%{
+                    bottom: -80px;
+                }
+                100%{
+                    bottom: 0;
+                }
         }
          .layer-7 {
             position: absolute;
@@ -237,7 +300,7 @@
             height: 80px;
             background: green;
             left: 60px;
-            border-radius: 35%;
+            border-radius: 45%;
             bottom: 0%;
         }
 
@@ -355,6 +418,7 @@
         </div>
         <div class="layer-3">
             <div class="layer-3-grass"></div>
+            <div class="layer-3-land"></div>
         </div>
         <div class="layer-4">
             <div class="left-ear--outer"></div>
@@ -368,6 +432,7 @@
         </div>
         <div class="layer-5">
             <div class="layer-5-grass"></div>
+            <div class="layer-5-land"></div>
         </div>
         <div class="layer-6">
             <div class="left-ear--outer"></div>
@@ -381,6 +446,7 @@
         </div>
         <div class="layer-7">
             <div class="layer-7-grass"></div>
+            <div class="layer-7-land"></div>
         </div>
         <div class="layer-8">
             <div class="layer-8-bush-1"></div>
